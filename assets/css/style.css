@@ -1,0 +1,115 @@
+.section {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#section_1 {
+    background-image: url("../images/s1.jpg");
+}
+
+#section_2 {
+    background-image: url("../images/s2.jpg");
+}
+
+
+
+#pp-nav li a span {
+    width: 20px;
+    height: 20px;
+    border: none;
+    background-color: #ffffff;
+}
+
+#pp-nav li {
+    padding: 10px 40px 10px 0;
+}
+
+#pp-nav li .active span,
+.pp-slidesNav .active span {
+    background-color: inherit;
+    border: 3px solid #ffffff !important;
+}
+
+h1,
+h3 {
+    text-align: center;
+    color: #ffffff !important;
+}
+
+div.wrapper h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#arrow {
+    width: 100px;
+    height: 100px;
+    background: rgba(18, 18, 18, 0.6);
+    text-align: center;
+    cursor: pointer;
+    position: fixed;
+    bottom: 0;
+    left: 45%;
+    border: 0;
+    outline: 0;
+    z-index: 100;
+    transition: ease-in 0.3s;
+    font-weight: bold;
+}
+
+#arrow img {
+    width: 50px;
+}
+
+#arrow:hover {
+    background: rgba(11, 11, 11, 0.73);
+}
+
+#arrow:hover span {
+    top: 0;
+    color: #FFF;
+}
+
+.wrapper img {
+    width: 300px;
+}
+
+img.logo {
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    height: 60px;
+}
+
+.col-md-offset-3 {
+  margin-left: 35%;
+}
+
+img[src*="Wallker"]{
+  position: absolute;
+  width: 80%;
+}
+
+.Wallker p {
+  font-family: 'Rambla', serif;
+  color: white;
+  font-size: 24px;
+  padding:0 120px;
+
+}
+
+.Wallker h1{
+  font-family: 'Roboto Slab' ,   serif;
+}
+
+.container > .Wallker > p{
+  padding: 0 30%;
+}
+
+#pageload {
+  background-color: #eeeeee !important;
+  z-index: 1001;
+
+}
