@@ -1,29 +1,30 @@
-$(document).ready(function () {
-  $('#Wallker').hide();
-  $('#pagepiling').pagepiling({
-    loopBottom:true,
-    loopTop:true,
-    verticalAllign:false,
-    /*navigation: {
-        'textColor': '#000',
-        'bulletsColor': '#000',
-        'position': 'right',
-        'tooltips': ['Welcome!', 'Waqlker', 'Maestro', 'section4']
-      },*/
-      onLeave: function(index, nextIndex, direction){
-        if(index == 1 && (direction == 'down')) {
-          $('#Wallker').show('slow');
+$(document).ready(function() {
+    $('#Wallker').hide();
+    $('#Maestro').hide();
+    $('#pagepiling').pagepiling({
+        loopBottom: true,
+        loopTop: true,
+        verticalAllign: false,
+        onLeave: function(index, nextIndex, direction) {
+          if ((index == 1 && direction == 'down' && nextIndex == 2 )|| (index == 3 && direction == 'up' && nextIndex == 2)){
+            $('#Wallker').show('slow');
+          }
+           if((index ==1 && direction == 'down' && nextIndex == 3) || (index == 2 && direction == 'down' && nextIndex == 3)){
+            $('#Maestro').show('slow');
+          }
+          if(index == 2 && (direction == 'up' || direction == 'down')){
+            $('#Wallker').hide('slow');
+          }
+          if(index == 3 && direction == 'up' && (nextIndex == 1 || nextIndex == 2)){
+            $('#Maestro').hide('slow');
+          }
         }
-        else if (index == 2 && (direction == 'up') || (direction == 'down')) {
-          $('#Wallker').hide('slow');
-        }
-      }
 
-  });
+    });
 
-  $('#arrow').click(function(event) {
+    $('#arrow').click(function(event) {
 
-    $.fn.pagepiling.moveSectionDown();
-  });
+        $.fn.pagepiling.moveSectiondown();
+    });
 
 });
