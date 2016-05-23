@@ -68,16 +68,16 @@ img.logo {
     left: 40px;
     height: 60px;
 }
-img[src*="Wallker"] , img[src*='Maestro'] {
+img[src*="Wallker"], img[src*='Maestro'] {
     position: absolute;
     width: 80%;
 }
-.Wallker p , .Maestro p{
+.Wallker p, .Maestro p {
     color: white;
     font-size: 28px;
     text-align: left;
 }
-.Wallker h1 , .Maestro h1{
+.Wallker h1, .Maestro h1 {
     font-family: "Poiret One", bold;
 }
 .Wallker h1::before {
