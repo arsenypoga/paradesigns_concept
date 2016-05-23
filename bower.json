@@ -1,24 +1,25 @@
 {
-    "name": "reactjs",
-    "description": "",
-    "main": "index.js",
-    "authors": [
-        "ArsenyPoga <semiretoja@gmail.com>"
-    ],
-    "license": "ISC",
-    "homepage": "",
-    "private": true,
-    "ignore": [
-        "**/.*",
-        "node_modules",
-        "bower_components",
-        "test",
-        "tests"
-    ],
-    "dependencies": {
-        "bootstrap": "^3.3.6",
-        "handlebars": "^4.0.5",
-        "pagePiling.js": "pagepiling.js#^1.5.3",
-        "jquery": "~2.2.3"
-    }
+  "name": "reactjs",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "ArsenyPoga <semiretoja@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "handlebars": "^4.0.5",
+    "pagePiling.js": "pagepiling.js#^1.5.3",
+    "jquery": "~2.2.3",
+    "fakeLoader": "fakeloader#*"
+  }
 }
