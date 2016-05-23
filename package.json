@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "bower": "^1.7.9",
-    "jquery-smooth-scroll": "^1.7.2"
+    "bower": "^1.7.9"
   },
   "devDependencies": {},
   "scripts": {
