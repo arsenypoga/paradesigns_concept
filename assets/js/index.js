@@ -4,7 +4,7 @@ $(document).ready(function() {
     $('#Wallker').hide();
     $('#Maestro').hide();
 
-    $('#fakeLoader').fakeLoader();
+
 
     $('#pagepiling').pagepiling({
         loopBottom: true,
@@ -24,11 +24,12 @@ $(document).ready(function() {
                 $('#Maestro').hide('slow');
             }
         }
+    });
+    $('#fakeLoader').fakeLoader({
+      bgColor :"rgb(106, 62, 200)"
 
     });
-
     $('#arrow').click(function(event) {
-        console.log("clicked");
         $.fn.pagepiling.moveSectionDown();
     });
 });
